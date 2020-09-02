@@ -3,3 +3,5 @@
   price: @product.price,
   url: @product.image_url,
   description: @product.description,
+
+}
