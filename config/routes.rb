@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     # get "/product_maintwo" => "products#product_two"
     # get "/product_mainthree" => "products#product_three"
     # get "/product_mainfour" => "products#product_four"
-    get "/product" => "products#index"
-    get "/product/:id" => "products#show"
+    get "/products" => "products#index"
+    post "/products" => "products#create"
+    get "/products/:id" => "products#show"
+    patch "/product/:id" => "products#update"
   end
 end
