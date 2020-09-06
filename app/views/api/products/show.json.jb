@@ -1,7 +1,14 @@
 {
   id: @product.id,
-  first_name: @product.name,
+  name: @product.name,
   price: @product.price,
-  url: @product.image_url,
+  image_url: @product.image_url,
   description: @product.description,
+  extra: {
+    updated_at: @product.created_at,
+    friendly_updated_at: @product.friendly_updated_at,
+    is_discounted?: @product.is_discounted?,
+    tax: @product.tax, 
+    total: @product.total,
+  }
 }
