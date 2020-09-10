@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   validates :price, presence: true
   validates :price, numericality: { greather_than: 0 }
   validates :description, length: { in: 2..500 }
+  
   def friendly_updated_at
     created_at.strftime("%B%e, %Y")
   end 
